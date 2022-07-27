@@ -19,9 +19,30 @@ h1{
 .text-color-light {
     color: white;
 }
+.my-color{
+    color: rgb(107, 176, 203);
+}
 .animate {
-	animation:animate 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate 1s cubic-bezier(0.2, 0.6, 0.2, 1);
 	animation-fill-mode:backwards;
+}
+.two{
+    animation-delay: 0.6s;
+}
+.one{
+    animation-delay: 0.3s;
+}
+.img-scale{
+    animation: img-scale 2.5s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation-fill-mode: backwards;
+}
+@keyframes img-scale {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+       transform: scale(1);
+    }
 }
 @keyframes animate {
     0% {
@@ -65,7 +86,7 @@ h1{
     display: flex;
     flex-direction: column;
 }
-img{
+.img-scale{
     min-width: 30vw;
     max-width: 90vw;
     min-height: 30vw;
@@ -95,20 +116,9 @@ img{
 
 /*----------------- Skills Page--------------------- */
 .skill-cnt-pos{
-    margin: 10%;
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 3rem;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
-.side-head{
-    font-size: 2.4rem;
-    color: rgb(197, 23, 23);
-}
-.main-cnt-skill{
-    font-size: 2rem;
-    color: white;
-}
-
 /*-------------------contact page-------------------- */
 .contact-cnt{
     font-size: 1.5rem;
@@ -128,6 +138,9 @@ img{
 }
 .trans{
      display: inline;margin-left: 2rem;
+}
+.trans a{
+    color: white;
 }
 .trans:hover{
     margin-left: 1em;
@@ -172,7 +185,7 @@ img{
     content: "I'm";
 }
 .hover-text-change-skill:hover::after{
-    content: "Skills";
+    content: "Work";
     margin-left: 0.4em;
     transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);	
 }
