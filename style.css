@@ -157,7 +157,8 @@ h1{
       font-size: 6vh;
       line-height: 1;
   }
-  img{
+  .img-scale{
+        margin: 10%;
       width: 80%;
       height: auto;
   }
@@ -170,6 +171,13 @@ h1{
   .head-pos-abtpage ,.head-contact{
         font-size: 2rem;
   }
+  .trans{
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .contact-cnt,.head-contact{
+    margin: 5% 10%;
+  }	
 }
 
 /*---------------------- intro page hover states--------------------- */
